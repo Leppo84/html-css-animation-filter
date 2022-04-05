@@ -121,22 +121,52 @@
 
 .ex-10-icon {
     font-size: 60px;
+    animation-name: spin10;
+    animation-duration: 1s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
 }
 
-.ex-10-icon:hover {
-    animation-name: spin10;
+@keyframes spin10 {
+0% {
+    transform: rotate(0deg);  
+}
+25% {
+    transform: rotate(90deg);  
+}
+50% {
+    transform: rotate(180deg);  
+}
+75% {
+    transform: rotate(270deg);  
+}
+100% {
+    transform: rotate(360deg);  
+}
+}
+
+.ex-11-icon {
+    font-size: 60px;
+    transition: 0.3s;
+}
+
+.ex-11-icon:hover {
+    animation-name: spin11;
+    animation-duration: 1.5s;
     animation-iteration-count: infinite;
 }
 
-@keyframes {
-    25% 
 
-    
+@keyframes spin11 {
+0% {
+    transform: rotate(0deg);  
 }
-
-
-.ex-10-icon {
-    font-size: 60px;
+75% {
+    transform: rotate(280deg);  
+}
+100% {
+    transform: rotate(-280deg);
+}
 }
 
 .ex-11-icon {
